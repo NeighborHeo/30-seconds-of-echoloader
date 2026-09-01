@@ -4,7 +4,7 @@
     "description": "gipc-app 코드베이스 30초 레퍼런스 카드",
     "codebase": "gipc-app (GE Healthcare, ~40k C++ files)",
     "updated": "2026-09-01",
-    "total": 72
+    "total": 82
   },
   "categories": {
     "cpp": {
@@ -36,6 +36,11 @@
       "label": "워크플로",
       "description": "개발 절차, PR 체크리스트, 디버깅, 보안 감사",
       "color": "#b45309"
+    },
+    "udt": {
+      "label": "UDT & GrandCentral",
+      "description": "GcUdtHandle, UDT 객체 그래프, GrandCentral 프레임워크 심화",
+      "color": "#0891b2"
     }
   },
   "snippets": [
@@ -984,6 +989,141 @@
         "strategy"
       ],
       "difficulty": "advanced"
+    },
+    {
+      "id": "what-is-udt",
+      "title": "UDT란 무엇인가: GrandCentral의 객체 노드",
+      "category": "udt",
+      "file": "snippets/udt/what-is-udt.md",
+      "tags": [
+        "udt",
+        "grandcentral",
+        "gc-framework",
+        "object-model"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "gc-udt-handle-lifetime",
+      "title": "GcUdtHandle 생명주기: 생성·유효성·해제",
+      "category": "udt",
+      "file": "snippets/udt/gc-udt-handle-lifetime.md",
+      "tags": [
+        "GcUdtHandle",
+        "lifetime",
+        "RAII",
+        "validity"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "udt-vs-gc-params",
+      "title": "UDT 객체 vs GC 파라미터: 언제 어느 채널을",
+      "category": "udt",
+      "file": "snippets/udt/udt-vs-gc-params.md",
+      "tags": [
+        "udt",
+        "gc-params",
+        "communication",
+        "layer-boundary"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "ovobject-as-udt-node",
+      "title": "OVObject = UDT 노드의 구현체",
+      "category": "udt",
+      "file": "snippets/udt/ovobject-as-udt-node.md",
+      "tags": [
+        "udt",
+        "ovobject",
+        "factory",
+        "rendering"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "three-logging-systems",
+      "title": "3개 로깅 시스템: ILogSimple / DBLogger / LogShim",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/three-logging-systems.md",
+      "tags": [
+        "logging",
+        "ILogSimple",
+        "DBLogger",
+        "LogShim"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "com-interface-in-gipc",
+      "title": "COM 인터페이스 패턴: IUnknown, Apartment, HRESULT",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/com-interface-in-gipc.md",
+      "tags": [
+        "com",
+        "atl",
+        "hresult",
+        "apartment",
+        "threading"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "sccommon-library-map",
+      "title": "ScCommon 라이브러리 지도",
+      "category": "architecture",
+      "file": "snippets/architecture/sccommon-library-map.md",
+      "tags": [
+        "ScCommon",
+        "library",
+        "utilities",
+        "threading",
+        "logging"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "esmain-internals",
+      "title": "ESMain 내부 구조: 11개 호출 사이트와 게이팅 로직",
+      "category": "architecture",
+      "file": "snippets/architecture/esmain-internals.md",
+      "tags": [
+        "esmain",
+        "acquisition",
+        "gating",
+        "layer-a",
+        "swe",
+        "ugap"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "gc-framework-overview",
+      "title": "GrandCentral(Gc) 프레임워크 전체 그림",
+      "category": "architecture",
+      "file": "snippets/architecture/gc-framework-overview.md",
+      "tags": [
+        "grandcentral",
+        "gc-framework",
+        "udt",
+        "parameter-bus",
+        "architecture"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "package-dependency-rules",
+      "title": "패키지 의존 방향 규칙",
+      "category": "architecture",
+      "file": "snippets/architecture/package-dependency-rules.md",
+      "tags": [
+        "dependencies",
+        "packages",
+        "layering",
+        "coupling"
+      ],
+      "difficulty": "intermediate"
     }
   ]
 }
