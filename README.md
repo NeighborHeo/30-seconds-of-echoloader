@@ -21,7 +21,7 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 
 ---
 
-## 🗂 C++ 패턴
+## 🗂 C++ 패턴 (15)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -35,25 +35,30 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [티켓 ID 주석](snippets/cpp/ticket-id-comments.md) | RBUG / FBUG / CR- 추적성 |
 | [Phase 마커 추적성](snippets/cpp/phase-marker-traceability.md) | 리팩토링 Phase 주석 |
 | [W4 경고 → 에러](snippets/cpp/w4-warnings-as-errors.md) | MSVC 23개 에러 승격 |
+| [GoogleTest 명명 규칙](snippets/cpp/gtest-naming-convention.md) | `Require_that_*` + `*Fixture` |
+| [스레딩 패턴](snippets/cpp/threading-patterns.md) | lock_guard, unique_lock, ScCommon::Thread |
+| [MFC 다이얼로그 클래스 패턴](snippets/cpp/mfc-dialog-pattern.md) | `C*` 접두어, m_b*, m_n* |
+| [Include 순서 컨벤션](snippets/cpp/include-order.md) | StdAfx → 로컬 → ScCommon → STL |
+| [빌드 매크로: _DEBUG vs NDEBUG](snippets/cpp/build-macros-debug-ndebug.md) | DEBUG_NEW, EnableFastChecks |
 
 ---
 
-## ⚙️ 고급 C++ 패턴
+## 🔬 고급 C++ 패턴 (8)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
-| [COM/ATL HRESULT 패턴](snippets/cpp-patterns/com-atl-hresult.md) | COM 경계 HRESULT, _ATL_APARTMENT_THREADED |
-| [MFC CDialog 파생 클래스](snippets/cpp-patterns/mfc-dialog-class.md) | C접두 클래스, m_b* bool 멤버 |
-| [Manager::Instance() 싱글톤](snippets/cpp-patterns/singleton-manager-instance.md) | s_ 정적 멤버, HandlerType 분기 |
-| [OVObject 팩토리 태그 등록](snippets/cpp-patterns/ovobject-factory-registration.md) | "Gc.SWEAcqAssist" 태그, dynamic_cast |
-| [ScCommon Thread 래퍼](snippets/cpp-patterns/sccommon-thread-wrapper.md) | Thread.h 래퍼, 스레드 친화도 주석 |
-| [enum + switch 상태머신](snippets/cpp-patterns/state-machine-enum-switch.md) | AcqAssistState, 전이 완전성 |
-| [GcUdtHandle 커스텀 핸들](snippets/cpp-patterns/gc-udt-handle.md) | GE 프레임워크 객체 생명주기 |
-| [const 정확성 패턴](snippets/cpp-patterns/const-correctness.md) | const 멤버함수, const& 매개변수 |
+| [const 정확성 패턴](snippets/cpp-patterns/const-correctness.md) | const 멤버 함수, const& 매개변수 |
+| [COM/ATL HRESULT 처리](snippets/cpp-patterns/com-atl-hresult.md) | COM 인터페이스 에러 처리 |
+| [GcUdtHandle 사용법](snippets/cpp-patterns/gc-udt-handle.md) | UDT 비소유 참조 핸들 |
+| [MFC 다이얼로그 클래스](snippets/cpp-patterns/mfc-dialog-class.md) | CDialog 서브클래스 패턴 |
+| [OVObject 팩토리 등록](snippets/cpp-patterns/ovobject-factory-registration.md) | Gc.* 태그 등록 방법 |
+| [ScCommon Thread 래퍼](snippets/cpp-patterns/sccommon-thread-wrapper.md) | GE 스레드 풀 래퍼 |
+| [싱글톤 Manager::Instance()](snippets/cpp-patterns/singleton-manager-instance.md) | 스레드 안전 싱글톤 |
+| [상태머신 enum + switch](snippets/cpp-patterns/state-machine-enum-switch.md) | AcqAssistState 패턴 |
 
 ---
 
-## 🏥 도메인 지식
+## 🏥 도메인 지식 (16)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -67,10 +72,16 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [프로브 접촉 품질 지시자](snippets/domain/probe-contact-quality-indicator.md) | ProbeContactQualityIndicator |
 | [LiverAI Processor](snippets/domain/liver-ai-processor.md) | AI 모델 파이프라인 |
 | [피부-캡슐 거리 (SCD)](snippets/domain/skin-to-capsule-distance.md) | SCD 측정 및 경고 조건 |
+| [프레임 버퍼 채널: SWE vs UGAP](snippets/domain/frame-buffer-channels.md) | 단일 채널 vs 2채널 구조 |
+| [SWE: Freeze vs Continuous 모드](snippets/domain/swe-freeze-continuous-mode.md) | AutoPos 키 분기 이유 |
+| [UGAP: Measure 모드와 분석 키](snippets/domain/ugap-measure-mode.md) | UGAPAcqAssistAnalyze 발행 조건 |
+| [워치독 & 치명 오류 핸들러](snippets/domain/watchdog-crash-handler.md) | FatalErrorHandler + WatchdogCB |
+| [감사 로그 사용자 이벤트](snippets/domain/audit-log-user-event.md) | AuditLogUserEvent + FDA 규정 |
+| [기울기 각도 검증 (PoorProbe 기하)](snippets/domain/tilt-angle-validation.md) | m_leftTiltAngle UGAP 검증 |
 
 ---
 
-## 🏗 아키텍처
+## 🏗 아키텍처 (15)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -84,50 +95,69 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [SWE와 UGAP는 합칠 수 없다](snippets/architecture/swe-vs-ugap-cannot-merge.md) | 도메인 차이 5가지 |
 | [AcqAssistState enum 중복](snippets/architecture/acqassiststate-enum-duplication.md) | 두 레이어의 enum 동기화 문제 |
 | [외부 컨트랙트 - 절대 건드리지 말 것](snippets/architecture/external-contracts-dont-touch.md) | 4개 load-bearing 지점 |
+| [GC 파라미터 버스: Layer A↔B 브리지](snippets/architecture/gc-parameter-bus.md) | 문자열 키/값 메시지 버스 |
+| [P0b: Warning 단위 테스트 전략](snippets/architecture/p0b-unit-test-strategy.md) | P2+P4 진입 전 필수 테스트 |
+| [P2+P4 전 Director 확인 질문 5가지](snippets/architecture/director-signoff-questions.md) | 열린 질문 + 의사결정 매트릭스 |
+| [analysis/ 디렉토리와 설계문서 §참조](snippets/architecture/analysis-design-docs.md) | §참조 코드-문서 연결 체계 |
+| [푸시다운 사전 조건](snippets/architecture/pushdown-preconditions.md) | Warning 결합도별 타이밍 분류 |
 
 ---
 
-## 📦 패키지 가이드
+## 📦 패키지 가이드 (10)
 
-| 아티클 | 핵심 역할 |
+| 아티클 | 핵심 개념 |
 |--------|----------|
-| [EchoLoader](snippets/packages/echo-loader.md) | 메인 엔트리포인트, 패키지 로딩 오케스트레이션 |
-| [EchoRoot](snippets/packages/echo-root.md) | 부트스트랩, FatalErrorHandler, WatchdogCB |
-| [EchoScanner](snippets/packages/echo-scanner.md) | 스캐닝 엔진, AcquisitionAssistant, ESMain |
-| [GcViewer/ObjectViewer](snippets/packages/gc-viewer-object-viewer.md) | 렌더링 레이어, OVObject 계층, AA Base 클래스들 |
-| [EchoMeasure](snippets/packages/echo-measure.md) | 측정 도구, kPa/dB/cm/MHz 결과 표시 |
-| [EchoConfig / EchoConfigManager](snippets/packages/echo-config.md) | 프리셋 관리, "ShearTrackAlg" 등 preset 문자열 |
-| [EchoSysmon](snippets/packages/echo-sysmon.md) | 런타임 헬스 모니터링, BSOD 이벤트 감지 |
-| [EchoDecisionSupport](snippets/packages/echo-decision-support.md) | LiverAI 파이프라인, 임상 가이드라인 대조 |
-| [EchoWorksheet](snippets/packages/echo-worksheet.md) | 측정 결과 → 임상 보고서 변환 |
-| [EchoFrontpanel / EchoTouchPanel](snippets/packages/echo-frontpanel.md) | 물리 UI, CApplicationTouchPanel, 하드웨어 이벤트 |
+| [EchoLoader](snippets/packages/echo-loader.md) | 부팅 진입점, 초기화 순서 |
+| [EchoScanner](snippets/packages/echo-scanner.md) | 획득 로직 메인 패키지 |
+| [EchoRoot](snippets/packages/echo-root.md) | 시스템 루트, 워치독 |
+| [EchoMeasure](snippets/packages/echo-measure.md) | 측정값 관리 |
+| [EchoWorksheet](snippets/packages/echo-worksheet.md) | 임상 보고서 |
+| [EchoFrontPanel](snippets/packages/echo-frontpanel.md) | 하드웨어 패널 입력 |
+| [EchoConfig](snippets/packages/echo-config.md) | 설정/프리셋 관리 |
+| [EchoSysMon](snippets/packages/echo-sysmon.md) | 시스템 모니터링 |
+| [EchoDecisionSupport](snippets/packages/echo-decision-support.md) | 임상 의사결정 지원 |
+| [GcViewer/ObjectViewer](snippets/packages/gc-viewer-object-viewer.md) | 렌더링 오브젝트 계층 |
 
 ---
 
-## 🔧 워크플로
+## ⚙️ 워크플로 (8)
 
-| 아티클 | 용도 |
-|--------|------|
-| [새 OVObject 추가하기](snippets/workflow/add-new-ovobject.md) | 팩토리 등록 4단계 전체 절차 |
-| [GoogleTest Fixture 작성](snippets/workflow/write-googletest-fixture.md) | `Require_that_` 네이밍, UnitTest/ 배치 |
-| [Debug vs Release 빌드 차이](snippets/workflow/debug-vs-release-build.md) | _DEBUG/NDEBUG, assert 도입 주의 |
-| [GE CONFIDENTIAL 헤더 추가](snippets/workflow/ge-confidential-header.md) | 라이선스 헤더 형식 및 예외 파일 |
-| [설계문서 Phase 갱신 절차](snippets/workflow/design-doc-phase-update.md) | §참조, [B.4-xxx] 커밋 접두사 |
-| [ESMain → 서브패키지 버그 트레이싱](snippets/workflow/bug-trace-flow.md) | 모듈 키 필터 → Layer 경계 → 덤프 |
-| [보안 이벤트 감사 로그](snippets/workflow/security-audit-log.md) | AuditLogUserEvent, AUDIT_LOG, FDA 요건 |
-| [리팩토링 PR 체크리스트](snippets/workflow/refactoring-pr-checklist.md) | 7개 섹션 최종 점검 |
+| 아티클 | 핵심 개념 |
+|--------|----------|
+| [GE CONFIDENTIAL 헤더 추가](snippets/workflow/ge-confidential-header.md) | 신규 파일 체크리스트 |
+| [리팩토링 PR 체크리스트](snippets/workflow/refactoring-pr-checklist.md) | 추적성 + 빌드 + 테스트 |
+| [새 OVObject 추가 절차](snippets/workflow/add-new-ovobject.md) | 팩토리 태그 등록 순서 |
+| [버그 추적 흐름](snippets/workflow/bug-trace-flow.md) | RBUG → 코드 → 로그 역추적 |
+| [설계문서 Phase 업데이트](snippets/workflow/design-doc-phase-update.md) | analysis/ 문서 §갱신 절차 |
+| [보안 감사 로그](snippets/workflow/security-audit-log.md) | AuditLogUserEvent 작성 규칙 |
+| [Debug vs Release 빌드 차이](snippets/workflow/debug-vs-release-build.md) | RuntimeChecks, DEBUG_NEW |
+| [GoogleTest Fixture 작성](snippets/workflow/write-googletest-fixture.md) | Require_that_* 명명 + 배치 |
 
 ---
 
 ## 📖 읽기 순서 추천
 
-처음 합류한 개발자라면 이 순서를 추천합니다:
+### 1단계: 전체 그림 (15분)
+1. [Layer A vs Layer B](snippets/architecture/layer-a-vs-layer-b.md)
+2. [GC 파라미터 버스](snippets/architecture/gc-parameter-bus.md)
+3. [Echo* 패키지 분류](snippets/architecture/echo-package-taxonomy.md)
 
-1. **패키지 지도 먼저** → [EchoLoader](snippets/packages/echo-loader.md) → [EchoScanner](snippets/packages/echo-scanner.md) → [GcViewer](snippets/packages/gc-viewer-object-viewer.md)
-2. **아키텍처 이해** → [Layer A vs B](snippets/architecture/layer-a-vs-layer-b.md) → [Manager-Factory-Handler](snippets/architecture/manager-factory-handler-pattern.md) → [외부 컨트랙트](snippets/architecture/external-contracts-dont-touch.md)
-3. **도메인 이해** → [SWE](snippets/domain/swe-shear-wave-elastography.md) → [UGAP](snippets/domain/ugap-ultrasound-guided-attenuation-parameter.md) → [간 경고 3종](snippets/domain/liver-warning-triad.md)
-4. **코딩 규칙** → [명명 규칙](snippets/cpp/member-naming-conventions.md) → [에러 처리](snippets/cpp/bool-out-param-error-handling.md) → [추적성](snippets/cpp/ticket-id-comments.md)
-5. **첫 PR 전** → [GE CONFIDENTIAL 헤더](snippets/workflow/ge-confidential-header.md) → [PR 체크리스트](snippets/workflow/refactoring-pr-checklist.md)
+### 2단계: 도메인 (20분)
+4. [SWE 개요](snippets/domain/swe-shear-wave-elastography.md)
+5. [UGAP 개요](snippets/domain/ugap-ultrasound-guided-attenuation-parameter.md)
+6. [간 경고 3종](snippets/domain/liver-warning-triad.md)
+7. [상태 머신](snippets/domain/acq-assist-state-machine.md)
+
+### 3단계: 코딩 규칙 (10분)
+8. [명명 규칙](snippets/cpp/member-naming-conventions.md)
+9. [에러 처리](snippets/cpp/bool-out-param-error-handling.md)
+10. [티켓 ID 주석](snippets/cpp/ticket-id-comments.md)
+
+### 4단계: 진행 중인 리팩토링 (15분)
+11. [LiverWarning3Panel 추출](snippets/architecture/composition-over-inheritance-liverwarning3panel.md)
+12. [Push-down 전략](snippets/architecture/pushdown-vs-hoisting-strategy.md)
+13. [P0b 테스트 전략](snippets/architecture/p0b-unit-test-strategy.md)
+14. [Director 확인 질문](snippets/architecture/director-signoff-questions.md)
 
 ---
 
@@ -138,7 +168,6 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 - **기술 스택**: C++11/14, MSVC, MFC, COM, ATL, GoogleTest
 - **규제 환경**: FDA, IEC 62304 (의료기기 소프트웨어)
 - **레거시 기간**: 26년 (GE + Vingmed 인수)
-- **아키텍처 문서**: `analysis/SWEUGAPAcqAssist/` 디렉토리
 
 ---
 
