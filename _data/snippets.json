@@ -4,13 +4,18 @@
     "description": "gipc-app 코드베이스 30초 레퍼런스 카드",
     "codebase": "gipc-app (GE Healthcare, ~40k C++ files)",
     "updated": "2026-09-01",
-    "total": 30
+    "total": 72
   },
   "categories": {
     "cpp": {
       "label": "C++ 패턴",
       "description": "gipc-app에서 실제로 쓰이는 C++ 관용구·컨벤션",
       "color": "#3178c6"
+    },
+    "cpp-patterns": {
+      "label": "고급 C++ 패턴",
+      "description": "COM/ATL, MFC, 싱글톤, 팩토리 등 gipc-app 심화 패턴",
+      "color": "#1d4ed8"
     },
     "domain": {
       "label": "도메인 지식",
@@ -21,6 +26,16 @@
       "label": "아키텍처",
       "description": "패키지 구조, 설계 패턴, 레이어 분리 전략",
       "color": "#dc2626"
+    },
+    "packages": {
+      "label": "패키지 가이드",
+      "description": "Echo* 패키지별 역할, 의존 관계, 주의사항",
+      "color": "#7c3aed"
+    },
+    "workflow": {
+      "label": "워크플로",
+      "description": "개발 절차, PR 체크리스트, 디버깅, 보안 감사",
+      "color": "#b45309"
     }
   },
   "snippets": [
@@ -29,7 +44,11 @@
       "title": "bool + out-param 에러 처리",
       "category": "cpp",
       "file": "snippets/cpp/bool-out-param-error-handling.md",
-      "tags": ["error-handling", "conventions", "com"],
+      "tags": [
+        "error-handling",
+        "conventions",
+        "com"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -37,7 +56,12 @@
       "title": "스마트 포인터 소유권",
       "category": "cpp",
       "file": "snippets/cpp/smart-pointer-ownership.md",
-      "tags": ["memory", "raii", "unique_ptr", "shared_ptr"],
+      "tags": [
+        "memory",
+        "raii",
+        "unique_ptr",
+        "shared_ptr"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -45,7 +69,11 @@
       "title": "명명 규칙",
       "category": "cpp",
       "file": "snippets/cpp/member-naming-conventions.md",
-      "tags": ["conventions", "naming", "mfc"],
+      "tags": [
+        "conventions",
+        "naming",
+        "mfc"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -53,7 +81,11 @@
       "title": "헤더 가드 패턴",
       "category": "cpp",
       "file": "snippets/cpp/header-guard-patterns.md",
-      "tags": ["conventions", "headers", "preprocessor"],
+      "tags": [
+        "conventions",
+        "headers",
+        "preprocessor"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -61,7 +93,11 @@
       "title": "C++11/14 천장",
       "category": "cpp",
       "file": "snippets/cpp/cpp11-14-ceiling.md",
-      "tags": ["standards", "compatibility", "modern-cpp"],
+      "tags": [
+        "standards",
+        "compatibility",
+        "modern-cpp"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -69,7 +105,11 @@
       "title": "ScLog 모듈 키 로깅",
       "category": "cpp",
       "file": "snippets/cpp/sclog-module-key-logging.md",
-      "tags": ["logging", "debugging", "conventions"],
+      "tags": [
+        "logging",
+        "debugging",
+        "conventions"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -77,7 +117,11 @@
       "title": "null 체크 + 조기 반환",
       "category": "cpp",
       "file": "snippets/cpp/null-check-early-return.md",
-      "tags": ["defensive-coding", "safety", "null"],
+      "tags": [
+        "defensive-coding",
+        "safety",
+        "null"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -85,7 +129,12 @@
       "title": "티켓 ID 주석",
       "category": "cpp",
       "file": "snippets/cpp/ticket-id-comments.md",
-      "tags": ["traceability", "comments", "process", "medical-device"],
+      "tags": [
+        "traceability",
+        "comments",
+        "process",
+        "medical-device"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -93,7 +142,12 @@
       "title": "Phase 마커 추적성",
       "category": "cpp",
       "file": "snippets/cpp/phase-marker-traceability.md",
-      "tags": ["traceability", "refactoring", "comments", "process"],
+      "tags": [
+        "traceability",
+        "refactoring",
+        "comments",
+        "process"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -101,7 +155,12 @@
       "title": "W4 경고 → 에러",
       "category": "cpp",
       "file": "snippets/cpp/w4-warnings-as-errors.md",
-      "tags": ["build", "msvc", "quality", "compiler"],
+      "tags": [
+        "build",
+        "msvc",
+        "quality",
+        "compiler"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -109,7 +168,12 @@
       "title": "SWE - 전단파 탄성 초음파",
       "category": "domain",
       "file": "snippets/domain/swe-shear-wave-elastography.md",
-      "tags": ["swe", "elastography", "liver", "clinical"],
+      "tags": [
+        "swe",
+        "elastography",
+        "liver",
+        "clinical"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -117,7 +181,12 @@
       "title": "UGAP - 초음파 감쇠 파라미터",
       "category": "domain",
       "file": "snippets/domain/ugap-ultrasound-guided-attenuation-parameter.md",
-      "tags": ["ugap", "attenuation", "steatosis", "clinical"],
+      "tags": [
+        "ugap",
+        "attenuation",
+        "steatosis",
+        "clinical"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -125,7 +194,13 @@
       "title": "간 경고 3종",
       "category": "domain",
       "file": "snippets/domain/liver-warning-triad.md",
-      "tags": ["warnings", "liver", "quality-check", "swe", "ugap"],
+      "tags": [
+        "warnings",
+        "liver",
+        "quality-check",
+        "swe",
+        "ugap"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -133,7 +208,11 @@
       "title": "Acquisition Assistant 상태 머신",
       "category": "domain",
       "file": "snippets/domain/acq-assist-state-machine.md",
-      "tags": ["state-machine", "acq-assist", "enum"],
+      "tags": [
+        "state-machine",
+        "acq-assist",
+        "enum"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -141,7 +220,11 @@
       "title": "Acquisition Assistant Phase 생명주기",
       "category": "domain",
       "file": "snippets/domain/acq-assist-phase-lifecycle.md",
-      "tags": ["phase", "lifecycle", "scan-state"],
+      "tags": [
+        "phase",
+        "lifecycle",
+        "scan-state"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -149,7 +232,12 @@
       "title": "AutoPos 키 해석",
       "category": "domain",
       "file": "snippets/domain/autopos-key-resolution.md",
-      "tags": ["autopos", "swe", "ugap", "key-handling"],
+      "tags": [
+        "autopos",
+        "swe",
+        "ugap",
+        "key-handling"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -157,7 +245,12 @@
       "title": "ROI Processor 개념",
       "category": "domain",
       "file": "snippets/domain/roi-processor-concept.md",
-      "tags": ["roi", "processor", "swe", "ugap"],
+      "tags": [
+        "roi",
+        "processor",
+        "swe",
+        "ugap"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -165,7 +258,12 @@
       "title": "프로브 접촉 품질 지시자",
       "category": "domain",
       "file": "snippets/domain/probe-contact-quality-indicator.md",
-      "tags": ["probe", "quality", "indicator", "warnings"],
+      "tags": [
+        "probe",
+        "quality",
+        "indicator",
+        "warnings"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -173,7 +271,12 @@
       "title": "LiverAI Processor",
       "category": "domain",
       "file": "snippets/domain/liver-ai-processor.md",
-      "tags": ["ai", "liver", "processor", "pipeline"],
+      "tags": [
+        "ai",
+        "liver",
+        "processor",
+        "pipeline"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -181,7 +284,13 @@
       "title": "피부-캡슐 거리 (SCD)",
       "category": "domain",
       "file": "snippets/domain/skin-to-capsule-distance.md",
-      "tags": ["scd", "capsule", "distance", "warnings", "liver"],
+      "tags": [
+        "scd",
+        "capsule",
+        "distance",
+        "warnings",
+        "liver"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -189,7 +298,12 @@
       "title": "Layer A vs Layer B",
       "category": "architecture",
       "file": "snippets/architecture/layer-a-vs-layer-b.md",
-      "tags": ["layers", "echo-scanner", "gc-viewer", "separation"],
+      "tags": [
+        "layers",
+        "echo-scanner",
+        "gc-viewer",
+        "separation"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -197,7 +311,12 @@
       "title": "Manager-Factory-Handler 패턴",
       "category": "architecture",
       "file": "snippets/architecture/manager-factory-handler-pattern.md",
-      "tags": ["pattern", "singleton", "factory", "interface"],
+      "tags": [
+        "pattern",
+        "singleton",
+        "factory",
+        "interface"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -205,7 +324,12 @@
       "title": "OVObject 상속",
       "category": "architecture",
       "file": "snippets/architecture/ovobject-inheritance.md",
-      "tags": ["ovobject", "rendering", "inheritance", "gc-viewer"],
+      "tags": [
+        "ovobject",
+        "rendering",
+        "inheritance",
+        "gc-viewer"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -213,7 +337,11 @@
       "title": "ESMain 진입점",
       "category": "architecture",
       "file": "snippets/architecture/esmain-as-system-hub.md",
-      "tags": ["esmain", "entry-point", "system-hub"],
+      "tags": [
+        "esmain",
+        "entry-point",
+        "system-hub"
+      ],
       "difficulty": "intermediate"
     },
     {
@@ -221,7 +349,11 @@
       "title": "Echo* 패키지 분류",
       "category": "architecture",
       "file": "snippets/architecture/echo-package-taxonomy.md",
-      "tags": ["packages", "taxonomy", "structure"],
+      "tags": [
+        "packages",
+        "taxonomy",
+        "structure"
+      ],
       "difficulty": "beginner"
     },
     {
@@ -229,7 +361,12 @@
       "title": "Composition: LiverWarning3Panel 추출",
       "category": "architecture",
       "file": "snippets/architecture/composition-over-inheritance-liverwarning3panel.md",
-      "tags": ["composition", "inheritance", "refactoring", "liver-warning"],
+      "tags": [
+        "composition",
+        "inheritance",
+        "refactoring",
+        "liver-warning"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -237,7 +374,12 @@
       "title": "Push-down vs Hoisting 전략",
       "category": "architecture",
       "file": "snippets/architecture/pushdown-vs-hoisting-strategy.md",
-      "tags": ["refactoring", "strategy", "push-down", "hoisting"],
+      "tags": [
+        "refactoring",
+        "strategy",
+        "push-down",
+        "hoisting"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -245,7 +387,12 @@
       "title": "SWE와 UGAP는 합칠 수 없다",
       "category": "architecture",
       "file": "snippets/architecture/swe-vs-ugap-cannot-merge.md",
-      "tags": ["swe", "ugap", "divergence", "design"],
+      "tags": [
+        "swe",
+        "ugap",
+        "divergence",
+        "design"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -253,7 +400,12 @@
       "title": "AcqAssistState enum 중복",
       "category": "architecture",
       "file": "snippets/architecture/acqassiststate-enum-duplication.md",
-      "tags": ["enum", "duplication", "layers", "sync"],
+      "tags": [
+        "enum",
+        "duplication",
+        "layers",
+        "sync"
+      ],
       "difficulty": "advanced"
     },
     {
@@ -261,7 +413,576 @@
       "title": "외부 컨트랙트 - 절대 건드리지 말 것",
       "category": "architecture",
       "file": "snippets/architecture/external-contracts-dont-touch.md",
-      "tags": ["contracts", "factory", "dynamic-cast", "refactoring"],
+      "tags": [
+        "contracts",
+        "factory",
+        "dynamic-cast",
+        "refactoring"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "com-atl-hresult",
+      "title": "COM/ATL HRESULT 패턴",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/com-atl-hresult.md",
+      "tags": [
+        "com",
+        "atl",
+        "hresult",
+        "error-handling"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mfc-dialog-class",
+      "title": "MFC CDialog 파생 클래스 패턴",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/mfc-dialog-class.md",
+      "tags": [
+        "mfc",
+        "dialog",
+        "ui",
+        "cdialog"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "singleton-manager-instance",
+      "title": "Manager::Instance() 싱글톤 패턴",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/singleton-manager-instance.md",
+      "tags": [
+        "singleton",
+        "manager",
+        "static",
+        "acq-assist"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ovobject-factory-registration",
+      "title": "OVObject 팩토리 태그 등록",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/ovobject-factory-registration.md",
+      "tags": [
+        "factory",
+        "ovobject",
+        "dynamic-cast",
+        "gc-viewer"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "sccommon-thread-wrapper",
+      "title": "ScCommon Thread 래퍼 패턴",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/sccommon-thread-wrapper.md",
+      "tags": [
+        "threading",
+        "sccommon",
+        "mutex",
+        "apartment"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "state-machine-enum-switch",
+      "title": "enum + switch 상태머신 패턴",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/state-machine-enum-switch.md",
+      "tags": [
+        "state-machine",
+        "enum",
+        "switch",
+        "acq-assist"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "gc-udt-handle",
+      "title": "GcUdtHandle 커스텀 핸들",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/gc-udt-handle.md",
+      "tags": [
+        "handle",
+        "raii",
+        "gc-viewer",
+        "graphics"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "const-correctness",
+      "title": "const 정확성 패턴",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/const-correctness.md",
+      "tags": [
+        "const",
+        "correctness",
+        "conventions",
+        "legacy"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "echo-loader",
+      "title": "EchoLoader 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-loader.md",
+      "tags": [
+        "echo-loader",
+        "bootstrap",
+        "entry-point",
+        "package-loading"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "echo-root",
+      "title": "EchoRoot 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-root.md",
+      "tags": [
+        "echo-root",
+        "watchdog",
+        "crash-dump",
+        "fatal-error"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "echo-scanner",
+      "title": "EchoScanner 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-scanner.md",
+      "tags": [
+        "echo-scanner",
+        "acq-assist",
+        "esmain",
+        "swe",
+        "ugap"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "gc-viewer-object-viewer",
+      "title": "GcViewer/ObjectViewer 레이어",
+      "category": "packages",
+      "file": "snippets/packages/gc-viewer-object-viewer.md",
+      "tags": [
+        "gc-viewer",
+        "ovobject",
+        "rendering",
+        "acq-assist-base"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "echo-measure",
+      "title": "EchoMeasure 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-measure.md",
+      "tags": [
+        "echo-measure",
+        "measurement",
+        "kpa",
+        "decoupling"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "echo-config",
+      "title": "EchoConfig / EchoConfigManager 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-config.md",
+      "tags": [
+        "echo-config",
+        "preset",
+        "configuration",
+        "sheartrack"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "echo-sysmon",
+      "title": "EchoSysmon 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-sysmon.md",
+      "tags": [
+        "echo-sysmon",
+        "monitoring",
+        "bsod",
+        "health"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "echo-decision-support",
+      "title": "EchoDecisionSupport 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-decision-support.md",
+      "tags": [
+        "decision-support",
+        "liver-ai",
+        "clinical",
+        "guidelines"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "echo-worksheet",
+      "title": "EchoWorksheet 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-worksheet.md",
+      "tags": [
+        "worksheet",
+        "report",
+        "measurement",
+        "output"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "echo-frontpanel",
+      "title": "EchoFrontpanel / EchoTouchPanel 패키지",
+      "category": "packages",
+      "file": "snippets/packages/echo-frontpanel.md",
+      "tags": [
+        "frontpanel",
+        "touchpanel",
+        "mfc",
+        "ui",
+        "hardware"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "add-new-ovobject",
+      "title": "새 OVObject 추가하기",
+      "category": "workflow",
+      "file": "snippets/workflow/add-new-ovobject.md",
+      "tags": [
+        "ovobject",
+        "factory",
+        "workflow",
+        "new-feature"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "write-googletest-fixture",
+      "title": "GoogleTest Fixture 작성",
+      "category": "workflow",
+      "file": "snippets/workflow/write-googletest-fixture.md",
+      "tags": [
+        "googletest",
+        "testing",
+        "fixture",
+        "require-that"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "debug-vs-release-build",
+      "title": "Debug vs Release 빌드 차이",
+      "category": "workflow",
+      "file": "snippets/workflow/debug-vs-release-build.md",
+      "tags": [
+        "build",
+        "debug",
+        "release",
+        "assert",
+        "msvc"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ge-confidential-header",
+      "title": "GE CONFIDENTIAL 헤더 추가",
+      "category": "workflow",
+      "file": "snippets/workflow/ge-confidential-header.md",
+      "tags": [
+        "license",
+        "header",
+        "confidential",
+        "compliance"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "design-doc-phase-update",
+      "title": "설계문서 Phase 갱신 절차",
+      "category": "workflow",
+      "file": "snippets/workflow/design-doc-phase-update.md",
+      "tags": [
+        "design-doc",
+        "phase",
+        "traceability",
+        "refactoring"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "bug-trace-flow",
+      "title": "ESMain → 서브패키지 버그 트레이싱",
+      "category": "workflow",
+      "file": "snippets/workflow/bug-trace-flow.md",
+      "tags": [
+        "debugging",
+        "esmain",
+        "sclog",
+        "crash-dump"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "security-audit-log",
+      "title": "보안 이벤트 감사 로그",
+      "category": "workflow",
+      "file": "snippets/workflow/security-audit-log.md",
+      "tags": [
+        "security",
+        "audit-log",
+        "compliance",
+        "medical-device"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "refactoring-pr-checklist",
+      "title": "리팩토링 PR 체크리스트",
+      "category": "workflow",
+      "file": "snippets/workflow/refactoring-pr-checklist.md",
+      "tags": [
+        "pr",
+        "checklist",
+        "refactoring",
+        "review"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "gtest-naming-convention",
+      "title": "GoogleTest 명명 규칙",
+      "category": "cpp",
+      "file": "snippets/cpp/gtest-naming-convention.md",
+      "tags": [
+        "testing",
+        "gtest",
+        "conventions",
+        "naming"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "threading-patterns",
+      "title": "스레딩 패턴",
+      "category": "cpp",
+      "file": "snippets/cpp/threading-patterns.md",
+      "tags": [
+        "threading",
+        "mutex",
+        "lock-guard",
+        "safety",
+        "concurrency"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mfc-dialog-pattern",
+      "title": "MFC 다이얼로그 클래스 패턴",
+      "category": "cpp",
+      "file": "snippets/cpp/mfc-dialog-pattern.md",
+      "tags": [
+        "mfc",
+        "dialog",
+        "naming",
+        "legacy",
+        "ui"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "include-order",
+      "title": "Include 순서 컨벤션",
+      "category": "cpp",
+      "file": "snippets/cpp/include-order.md",
+      "tags": [
+        "conventions",
+        "includes",
+        "header",
+        "build"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "build-macros-debug-ndebug",
+      "title": "빌드 매크로: _DEBUG vs NDEBUG",
+      "category": "cpp",
+      "file": "snippets/cpp/build-macros-debug-ndebug.md",
+      "tags": [
+        "build",
+        "debug",
+        "macros",
+        "msvc",
+        "safety"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "frame-buffer-channels",
+      "title": "프레임 버퍼 채널: SWE vs UGAP",
+      "category": "domain",
+      "file": "snippets/domain/frame-buffer-channels.md",
+      "tags": [
+        "frame-buffer",
+        "swe",
+        "ugap",
+        "acquisition",
+        "domain-difference"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "swe-freeze-continuous-mode",
+      "title": "SWE: Freeze vs Continuous 모드",
+      "category": "domain",
+      "file": "snippets/domain/swe-freeze-continuous-mode.md",
+      "tags": [
+        "swe",
+        "freeze",
+        "continuous",
+        "autopos",
+        "state-machine"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ugap-measure-mode",
+      "title": "UGAP: Measure 모드와 분석 키",
+      "category": "domain",
+      "file": "snippets/domain/ugap-measure-mode.md",
+      "tags": [
+        "ugap",
+        "measure-mode",
+        "autopos",
+        "analysis",
+        "attenuation"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "watchdog-crash-handler",
+      "title": "워치독 & 치명 오류 핸들러",
+      "category": "domain",
+      "file": "snippets/domain/watchdog-crash-handler.md",
+      "tags": [
+        "safety",
+        "watchdog",
+        "crash",
+        "fault-tolerance",
+        "medical-device"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "audit-log-user-event",
+      "title": "감사 로그 사용자 이벤트",
+      "category": "domain",
+      "file": "snippets/domain/audit-log-user-event.md",
+      "tags": [
+        "security",
+        "audit-log",
+        "compliance",
+        "fda",
+        "traceability"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "tilt-angle-validation",
+      "title": "기울기 각도 검증 (PoorProbe 기하)",
+      "category": "domain",
+      "file": "snippets/domain/tilt-angle-validation.md",
+      "tags": [
+        "ugap",
+        "poor-probe",
+        "tilt-angle",
+        "geometry",
+        "validation"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "gc-parameter-bus",
+      "title": "GC 파라미터 버스: Layer A↔B 브리지",
+      "category": "architecture",
+      "file": "snippets/architecture/gc-parameter-bus.md",
+      "tags": [
+        "gc-params",
+        "layer-boundary",
+        "messaging",
+        "decoupling",
+        "architecture"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "p0b-unit-test-strategy",
+      "title": "P0b: Warning 단위 테스트 전략",
+      "category": "architecture",
+      "file": "snippets/architecture/p0b-unit-test-strategy.md",
+      "tags": [
+        "testing",
+        "gtest",
+        "warning",
+        "p0b",
+        "refactoring",
+        "safety"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "director-signoff-questions",
+      "title": "P2+P4 전 Director 확인 질문 5가지",
+      "category": "architecture",
+      "file": "snippets/architecture/director-signoff-questions.md",
+      "tags": [
+        "process",
+        "refactoring",
+        "governance",
+        "p2-p4",
+        "decision"
+      ],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "analysis-design-docs",
+      "title": "analysis/ 디렉토리와 설계문서 §참조",
+      "category": "architecture",
+      "file": "snippets/architecture/analysis-design-docs.md",
+      "tags": [
+        "documentation",
+        "traceability",
+        "design-docs",
+        "phase-markers",
+        "governance"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "pushdown-preconditions",
+      "title": "푸시다운 사전 조건: 언제 안전하게 내려도 되나",
+      "category": "architecture",
+      "file": "snippets/architecture/pushdown-preconditions.md",
+      "tags": [
+        "push-down",
+        "refactoring",
+        "warning",
+        "dependency",
+        "strategy"
+      ],
       "difficulty": "advanced"
     }
   ]
