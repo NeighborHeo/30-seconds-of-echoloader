@@ -4,7 +4,7 @@
     "description": "gipc-app 코드베이스 30초 레퍼런스 카드",
     "codebase": "gipc-app (GE Healthcare, ~40k C++ files)",
     "updated": "2026-09-01",
-    "total": 82
+    "total": 98
   },
   "categories": {
     "cpp": {
@@ -1122,6 +1122,222 @@
         "packages",
         "layering",
         "coupling"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "variant-type",
+      "title": "Variant 타입: GC 파라미터의 키/값 컨테이너",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/variant-type.md",
+      "tags": [
+        "variant",
+        "gc-params",
+        "type-system",
+        "setparameter"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ovgraphics-render-objects",
+      "title": "OVGraphics::Pointer — 렌더링 객체 수명 관리",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/ovgraphics-render-objects.md",
+      "tags": [
+        "ovgraphics",
+        "rendering",
+        "pointer",
+        "raii"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "frame-struct",
+      "title": "Frame 구조체: 초음파 이미지 데이터 컨테이너",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/frame-struct.md",
+      "tags": [
+        "frame",
+        "image-data",
+        "swe",
+        "ugap",
+        "buffer"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "gc-param-key-naming",
+      "title": "GC 파라미터 키 네임스페이스 규칙",
+      "category": "architecture",
+      "file": "snippets/architecture/gc-param-key-naming.md",
+      "tags": [
+        "gc-params",
+        "key-naming",
+        "convention",
+        "layer-boundary"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "user-input-event-routing",
+      "title": "사용자 입력 이벤트 라우팅: FrontPanel → ESMain → Handler",
+      "category": "architecture",
+      "file": "snippets/architecture/user-input-event-routing.md",
+      "tags": [
+        "input",
+        "event",
+        "routing",
+        "esmain",
+        "frontpanel"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "d5-stub-handlers",
+      "title": "D5-stub 7개 핸들러: 즉시 가능한 푸시다운 작업",
+      "category": "architecture",
+      "file": "snippets/architecture/d5-stub-handlers.md",
+      "tags": [
+        "d5-stub",
+        "push-down",
+        "handlers",
+        "refactoring"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "roi-coordinate-system",
+      "title": "ROI 좌표계: 커서 → ROI 배치 → GC 파라미터",
+      "category": "domain",
+      "file": "snippets/domain/roi-coordinate-system.md",
+      "tags": [
+        "roi",
+        "coordinates",
+        "cursor",
+        "trbmove",
+        "gc-params"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "front-panel-to-esmain",
+      "title": "EchoFrontPanel → ESMain 입력 흐름",
+      "category": "architecture",
+      "file": "snippets/architecture/front-panel-to-esmain.md",
+      "tags": [
+        "frontpanel",
+        "esmain",
+        "input",
+        "mfc",
+        "message-queue"
+      ],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "preset-loading-pipeline",
+      "title": "프리셋 로딩 파이프라인: 선택 → 로딩 → 적용 → AA 초기화",
+      "category": "architecture",
+      "file": "snippets/architecture/preset-loading-pipeline.md",
+      "tags": [
+        "preset",
+        "echoconfig",
+        "pipeline",
+        "audit-log"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "preset-name-risk",
+      "title": "프리셋 문자열 하드코딩 위험: 'ShearTrackAlg' 문제",
+      "category": "domain",
+      "file": "snippets/domain/preset-name-risk.md",
+      "tags": [
+        "preset",
+        "hardcoding",
+        "ugap",
+        "risk",
+        "director-q2"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "echo-config-internals",
+      "title": "EchoConfig 내부: 프리셋 관리자의 책임 범위",
+      "category": "packages",
+      "file": "snippets/packages/echo-config-internals.md",
+      "tags": [
+        "echoconfig",
+        "preset",
+        "xml",
+        "validation",
+        "audit"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "swe-ugap-preset-difference",
+      "title": "SWE vs UGAP 프리셋 차이: 왜 공유 불가능한가",
+      "category": "domain",
+      "file": "snippets/domain/swe-ugap-preset-difference.md",
+      "tags": [
+        "swe",
+        "ugap",
+        "preset",
+        "clinical",
+        "physics"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "scanstate-vs-acqassiststate",
+      "title": "ScanState vs AcqAssistState: 두 상태 머신의 계층",
+      "category": "domain",
+      "file": "snippets/domain/scanstate-vs-acqassiststate.md",
+      "tags": [
+        "scanstate",
+        "acqassiststate",
+        "state-machine",
+        "esmain"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "debug-params-pattern",
+      "title": "UpdateDebugParameters: 내부 상태를 GC로 노출",
+      "category": "cpp-patterns",
+      "file": "snippets/cpp-patterns/debug-params-pattern.md",
+      "tags": [
+        "debug",
+        "params",
+        "gc-params",
+        "p0a",
+        "d3"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "raii-shutdown-order",
+      "title": "RAII 셧다운 순서: 초기화 역순 해제",
+      "category": "architecture",
+      "file": "snippets/architecture/raii-shutdown-order.md",
+      "tags": [
+        "raii",
+        "shutdown",
+        "lifecycle",
+        "ovobject"
+      ],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ovobject-render-loop",
+      "title": "OVObject 렌더 루프: Render()에서 무엇을 그리나",
+      "category": "architecture",
+      "file": "snippets/architecture/ovobject-render-loop.md",
+      "tags": [
+        "render",
+        "ovobject",
+        "ovgraphics",
+        "threading"
       ],
       "difficulty": "intermediate"
     }
