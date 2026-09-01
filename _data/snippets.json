@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "project": "30 seconds of echoloader",
+    "description": "gipc-app 코드베이스 30초 레퍼런스 카드",
+    "codebase": "gipc-app (GE Healthcare, ~40k C++ files)",
+    "updated": "2026-09-01",
+    "total": 30
+  },
+  "categories": {
+    "cpp": {
+      "label": "C++ 패턴",
+      "description": "gipc-app에서 실제로 쓰이는 C++ 관용구·컨벤션",
+      "color": "#3178c6"
+    },
+    "domain": {
+      "label": "도메인 지식",
+      "description": "초음파 의료 영상, SWE, UGAP, 간 측정 개념",
+      "color": "#16a34a"
+    },
+    "architecture": {
+      "label": "아키텍처",
+      "description": "패키지 구조, 설계 패턴, 레이어 분리 전략",
+      "color": "#dc2626"
+    }
+  },
+  "snippets": [
+    {
+      "id": "bool-out-param-error-handling",
+      "title": "bool + out-param 에러 처리",
+      "category": "cpp",
+      "file": "snippets/cpp/bool-out-param-error-handling.md",
+      "tags": ["error-handling", "conventions", "com"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "smart-pointer-ownership",
+      "title": "스마트 포인터 소유권",
+      "category": "cpp",
+      "file": "snippets/cpp/smart-pointer-ownership.md",
+      "tags": ["memory", "raii", "unique_ptr", "shared_ptr"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "member-naming-conventions",
+      "title": "명명 규칙",
+      "category": "cpp",
+      "file": "snippets/cpp/member-naming-conventions.md",
+      "tags": ["conventions", "naming", "mfc"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "header-guard-patterns",
+      "title": "헤더 가드 패턴",
+      "category": "cpp",
+      "file": "snippets/cpp/header-guard-patterns.md",
+      "tags": ["conventions", "headers", "preprocessor"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "cpp11-14-ceiling",
+      "title": "C++11/14 천장",
+      "category": "cpp",
+      "file": "snippets/cpp/cpp11-14-ceiling.md",
+      "tags": ["standards", "compatibility", "modern-cpp"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sclog-module-key-logging",
+      "title": "ScLog 모듈 키 로깅",
+      "category": "cpp",
+      "file": "snippets/cpp/sclog-module-key-logging.md",
+      "tags": ["logging", "debugging", "conventions"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "null-check-early-return",
+      "title": "null 체크 + 조기 반환",
+      "category": "cpp",
+      "file": "snippets/cpp/null-check-early-return.md",
+      "tags": ["defensive-coding", "safety", "null"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "ticket-id-comments",
+      "title": "티켓 ID 주석",
+      "category": "cpp",
+      "file": "snippets/cpp/ticket-id-comments.md",
+      "tags": ["traceability", "comments", "process", "medical-device"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "phase-marker-traceability",
+      "title": "Phase 마커 추적성",
+      "category": "cpp",
+      "file": "snippets/cpp/phase-marker-traceability.md",
+      "tags": ["traceability", "refactoring", "comments", "process"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "w4-warnings-as-errors",
+      "title": "W4 경고 → 에러",
+      "category": "cpp",
+      "file": "snippets/cpp/w4-warnings-as-errors.md",
+      "tags": ["build", "msvc", "quality", "compiler"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "swe-shear-wave-elastography",
+      "title": "SWE - 전단파 탄성 초음파",
+      "category": "domain",
+      "file": "snippets/domain/swe-shear-wave-elastography.md",
+      "tags": ["swe", "elastography", "liver", "clinical"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "ugap-ultrasound-guided-attenuation-parameter",
+      "title": "UGAP - 초음파 감쇠 파라미터",
+      "category": "domain",
+      "file": "snippets/domain/ugap-ultrasound-guided-attenuation-parameter.md",
+      "tags": ["ugap", "attenuation", "steatosis", "clinical"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "liver-warning-triad",
+      "title": "간 경고 3종",
+      "category": "domain",
+      "file": "snippets/domain/liver-warning-triad.md",
+      "tags": ["warnings", "liver", "quality-check", "swe", "ugap"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "acq-assist-state-machine",
+      "title": "Acquisition Assistant 상태 머신",
+      "category": "domain",
+      "file": "snippets/domain/acq-assist-state-machine.md",
+      "tags": ["state-machine", "acq-assist", "enum"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "acq-assist-phase-lifecycle",
+      "title": "Acquisition Assistant Phase 생명주기",
+      "category": "domain",
+      "file": "snippets/domain/acq-assist-phase-lifecycle.md",
+      "tags": ["phase", "lifecycle", "scan-state"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "autopos-key-resolution",
+      "title": "AutoPos 키 해석",
+      "category": "domain",
+      "file": "snippets/domain/autopos-key-resolution.md",
+      "tags": ["autopos", "swe", "ugap", "key-handling"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "roi-processor-concept",
+      "title": "ROI Processor 개념",
+      "category": "domain",
+      "file": "snippets/domain/roi-processor-concept.md",
+      "tags": ["roi", "processor", "swe", "ugap"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "probe-contact-quality-indicator",
+      "title": "프로브 접촉 품질 지시자",
+      "category": "domain",
+      "file": "snippets/domain/probe-contact-quality-indicator.md",
+      "tags": ["probe", "quality", "indicator", "warnings"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "liver-ai-processor",
+      "title": "LiverAI Processor",
+      "category": "domain",
+      "file": "snippets/domain/liver-ai-processor.md",
+      "tags": ["ai", "liver", "processor", "pipeline"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "skin-to-capsule-distance",
+      "title": "피부-캡슐 거리 (SCD)",
+      "category": "domain",
+      "file": "snippets/domain/skin-to-capsule-distance.md",
+      "tags": ["scd", "capsule", "distance", "warnings", "liver"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "layer-a-vs-layer-b",
+      "title": "Layer A vs Layer B",
+      "category": "architecture",
+      "file": "snippets/architecture/layer-a-vs-layer-b.md",
+      "tags": ["layers", "echo-scanner", "gc-viewer", "separation"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "manager-factory-handler-pattern",
+      "title": "Manager-Factory-Handler 패턴",
+      "category": "architecture",
+      "file": "snippets/architecture/manager-factory-handler-pattern.md",
+      "tags": ["pattern", "singleton", "factory", "interface"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "ovobject-inheritance",
+      "title": "OVObject 상속",
+      "category": "architecture",
+      "file": "snippets/architecture/ovobject-inheritance.md",
+      "tags": ["ovobject", "rendering", "inheritance", "gc-viewer"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "esmain-as-system-hub",
+      "title": "ESMain 진입점",
+      "category": "architecture",
+      "file": "snippets/architecture/esmain-as-system-hub.md",
+      "tags": ["esmain", "entry-point", "system-hub"],
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "echo-package-taxonomy",
+      "title": "Echo* 패키지 분류",
+      "category": "architecture",
+      "file": "snippets/architecture/echo-package-taxonomy.md",
+      "tags": ["packages", "taxonomy", "structure"],
+      "difficulty": "beginner"
+    },
+    {
+      "id": "composition-over-inheritance-liverwarning3panel",
+      "title": "Composition: LiverWarning3Panel 추출",
+      "category": "architecture",
+      "file": "snippets/architecture/composition-over-inheritance-liverwarning3panel.md",
+      "tags": ["composition", "inheritance", "refactoring", "liver-warning"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "pushdown-vs-hoisting-strategy",
+      "title": "Push-down vs Hoisting 전략",
+      "category": "architecture",
+      "file": "snippets/architecture/pushdown-vs-hoisting-strategy.md",
+      "tags": ["refactoring", "strategy", "push-down", "hoisting"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "swe-vs-ugap-cannot-merge",
+      "title": "SWE와 UGAP는 합칠 수 없다",
+      "category": "architecture",
+      "file": "snippets/architecture/swe-vs-ugap-cannot-merge.md",
+      "tags": ["swe", "ugap", "divergence", "design"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "acqassiststate-enum-duplication",
+      "title": "AcqAssistState enum 중복",
+      "category": "architecture",
+      "file": "snippets/architecture/acqassiststate-enum-duplication.md",
+      "tags": ["enum", "duplication", "layers", "sync"],
+      "difficulty": "advanced"
+    },
+    {
+      "id": "external-contracts-dont-touch",
+      "title": "외부 컨트랙트 - 절대 건드리지 말 것",
+      "category": "architecture",
+      "file": "snippets/architecture/external-contracts-dont-touch.md",
+      "tags": ["contracts", "factory", "dynamic-cast", "refactoring"],
+      "difficulty": "advanced"
+    }
+  ]
+}
