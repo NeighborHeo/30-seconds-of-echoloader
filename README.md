@@ -15,12 +15,12 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [C++ 패턴](snippets/cpp/) | 17 | gipc-app에서 실제로 쓰이는 C++ 관용구·컨벤션 |
 | [고급 C++ 패턴](snippets/cpp-patterns/) | 23 | PIMPL, 이동 시맨틱, 16ms 프레임 버짓, atomic, 오브젝트 풀 |
 | [디자인 패턴](snippets/patterns/) | 6 | Observer, NVI, Strategy, Facade, CRTP, RAII |
-| [아키텍처](snippets/architecture/) | 21 | 설계 철학, 실패 모드 지도, 26년 코드베이스 지형, 코드 배치 결정 |
-| [도메인 지식](snippets/domain/) | 15 | 초음파 물리, SWE, UGAP, IEC 62304, DICOM |
+| [아키텍처](snippets/architecture/) | 23 | 설계 철학, 실패 모드 지도, 26년 코드베이스 지형, 코드 배치 결정 |
+| [도메인 지식](snippets/domain/) | 17 | 초음파 물리, SWE, UGAP, IEC 62304, DICOM |
 | [패키지 가이드](snippets/packages/) | 11 | Echo* 패키지별 역할, 의존 관계, 주의사항 |
-| [워크플로](snippets/workflow/) | 16 | 코드 탐색법, ESMain 탐색, GC 파라미터 개발, 커밋 전 안전망 |
+| [워크플로](snippets/workflow/) | 24 | 코드 탐색법, ESMain 탐색, GC 파라미터 개발, 커밋 전 안전망 |
 
-**총 124개 아티클**
+**총 136개 아티클**
 
 ---
 
@@ -120,7 +120,7 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 
 ---
 
-## 🏗 아키텍처 (20)
+## 🏗 아키텍처 (23)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -145,10 +145,12 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [실패 모드 지도](snippets/architecture/failure-modes-map.md) | 6가지 실패 패턴 — 증상→원인→진단→수정 룩업 테이블 |
 | [26년 코드베이스 지도](snippets/architecture/legacy-modern-code-boundary.md) | 지뢰밭(ESMain, MFC, COM) vs 안전 지대(OVObject, Handler) |
 | [새 코드는 어디에 짜나](snippets/architecture/where-does-new-code-go.md) | Layer A/B 결정 트리 — 기능 받자마자 첫 번째로 여는 문서 |
+| [GC 파라미터 버스 동시 발행 순서 보증](snippets/architecture/gc-param-bus-concurrent-ordering.md) | UI·Acquisition 동시 SetParameterValue() 시 어떤 값이 이기는가 |
+| [OnDeactivate vs Render() 직렬화](snippets/architecture/ovobject-deactivate-render-serialization.md) | GC 프레임워크 직렬화 보증 + IsValid()가 여전히 필요한 이유 |
 
 ---
 
-## 🏥 도메인 지식 (15)
+## 🏥 도메인 지식 (17)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -167,6 +169,8 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [ROI 좌표계](snippets/domain/roi-coordinate-system.md) | 화면 좌표 vs 물리 좌표 |
 | [워치독 & 치명 오류 핸들러](snippets/domain/watchdog-crash-handler.md) | FatalErrorHandler + WatchdogCB |
 | [감사 로그 사용자 이벤트](snippets/domain/audit-log-user-event.md) | AuditLogUserEvent + FDA 규정 |
+| [프로브 종류별 동작 분기](snippets/domain/probe-type-code-branching.md) | "Probe A는 되고 B는 안 된다" 버그 — 계층별 분기점 찾기 |
+| [AuditLog 의무 vs ScLog 선택 기준](snippets/domain/auditlog-obligation-guide.md) | AuditLogUserEvent()를 써야 하는가 ScLogInfo()로 충분한가 |
 
 ---
 
@@ -188,7 +192,7 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 
 ---
 
-## ⚙️ 워크플로 (12)
+## ⚙️ 워크플로 (24)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -208,6 +212,14 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [ESMain.cpp 10,000줄 탐색법](snippets/workflow/esmain-navigation.md) | 구역 지도 + 작업별 grep + VS 단축키 |
 | [GC 파라미터 기능 개발 전체 절차](snippets/workflow/gc-param-feature-development.md) | 키 설계→발행→수신→Render→디버깅 6단계 |
 | [커밋 전 안전성 체크](snippets/workflow/pre-commit-safety-net.md) | CI 없는 코드베이스의 10분 안전망 |
+| [SWE+UGAP 이중 게이팅 패턴](snippets/workflow/swe-ugap-dual-gating.md) | 두 모드 공통 기능 추가 시 올바른 게이팅 패턴 |
+| [enum 추가 시 영향 범위 grep](snippets/workflow/enum-change-impact-grep.md) | AcqAssistState 값 추가 → switch/if-else 누락 없이 찾기 |
+| [ESMain PR 리뷰 체크리스트](snippets/workflow/esmain-pr-review-checklist.md) | ESMain을 건드리는 PR 리뷰 7개 확인 항목 |
+| [Debug/Release 빌드 차이 버그 조사법](snippets/workflow/debug-vs-release-investigation.md) | UB·최적화·assert 부작용으로 인한 Debug/Release 불일치 |
+| [현장 minidump → PDB → git 소스 연결](snippets/workflow/minidump-pdb-source-mapping.md) | .dmp 파일 → 소스 라인 단위 분석 5단계 절차 |
+| [GC 의존 코드 단위 테스트 격리](snippets/workflow/gc-state-unit-test-isolation.md) | GcUdtRegistry 없이 GC 의존 코드 테스트하는 3가지 방법 |
+| [내 OVObject가 Active인지 확인하는 법](snippets/workflow/ovobject-active-state-verification.md) | Render()/SetParameter()가 불리지 않을 때 Active 여부 진단 |
+| [새 스캔 모드 추가 7개 수정 지점](snippets/workflow/new-scan-mode-full-checklist.md) | 완전히 새 획득 모드 추가 시 빠뜨리면 안 되는 체크리스트 |
 
 ---
 

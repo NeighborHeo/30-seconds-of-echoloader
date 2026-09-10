@@ -1712,7 +1712,194 @@
       ],
       "difficulty": "intermediate",
       "file": "snippets/workflow/pre-commit-safety-net.md"
+    },
+    {
+      "id": "swe-ugap-dual-gating",
+      "title": "SWE + UGAP 공통 기능의 이중 게이팅 패턴",
+      "category": "workflow",
+      "tags": [
+        "swe",
+        "ugap",
+        "gating",
+        "esmain",
+        "acquisition-assistant",
+        "elasto"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/workflow/swe-ugap-dual-gating.md"
+    },
+    {
+      "id": "enum-change-impact-grep",
+      "title": "AcqAssistState에 새 enum 값 추가할 때 영향 범위 grep",
+      "category": "workflow",
+      "tags": [
+        "enum",
+        "grep",
+        "esmain",
+        "state",
+        "switch",
+        "layer-a",
+        "layer-b",
+        "msvc"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/workflow/enum-change-impact-grep.md"
+    },
+    {
+      "id": "esmain-pr-review-checklist",
+      "title": "ESMain.cpp PR 리뷰 체크리스트",
+      "category": "workflow",
+      "tags": [
+        "esmain",
+        "pr-review",
+        "gating",
+        "aa",
+        "include",
+        "iec62304",
+        "traceability"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/workflow/esmain-pr-review-checklist.md"
+    },
+    {
+      "id": "debug-vs-release-investigation",
+      "title": "Debug 빌드는 되고 Release 빌드는 안 되는 버그 조사법",
+      "category": "workflow",
+      "tags": [
+        "debug",
+        "release",
+        "msvc",
+        "ub",
+        "asan",
+        "optimization",
+        "volatile",
+        "assert"
+      ],
+      "difficulty": "advanced",
+      "path": "snippets/workflow/debug-vs-release-investigation.md"
+    },
+    {
+      "id": "minidump-pdb-source-mapping",
+      "title": "현장 minidump → PDB → git 소스 연결하는 법",
+      "category": "workflow",
+      "tags": [
+        "debugging",
+        "windbg",
+        "minidump",
+        "crash",
+        "symbols",
+        "git",
+        "pdb"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/workflow/minidump-pdb-source-mapping.md"
+    },
+    {
+      "id": "gc-state-unit-test-isolation",
+      "title": "GrandCentral 상태 의존 코드의 단위 테스트 격리",
+      "category": "workflow",
+      "tags": [
+        "googletest",
+        "testing",
+        "gc",
+        "grandcentral",
+        "dependency-injection",
+        "seam",
+        "GcUdtRegistry"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/workflow/gc-state-unit-test-isolation.md"
+    },
+    {
+      "id": "gc-param-bus-concurrent-ordering",
+      "title": "GC 파라미터 버스 동시 발행 시 순서 보증",
+      "category": "architecture",
+      "tags": [
+        "gc-params",
+        "threading",
+        "ordering",
+        "race-condition",
+        "SetParameterValue",
+        "ESMain"
+      ],
+      "difficulty": "advanced",
+      "path": "snippets/architecture/gc-param-bus-concurrent-ordering.md"
+    },
+    {
+      "id": "ovobject-deactivate-render-serialization",
+      "title": "OnDeactivate와 Render() 직렬화: IsValid()가 충분한 이유",
+      "category": "architecture",
+      "tags": [
+        "gc",
+        "ovobject",
+        "render",
+        "deactivate",
+        "thread-safety",
+        "IsValid",
+        "GcUdtHandle"
+      ],
+      "difficulty": "advanced",
+      "path": "snippets/architecture/ovobject-deactivate-render-serialization.md"
+    },
+    {
+      "id": "ovobject-active-state-verification",
+      "title": "내 OVObject가 Active인지 확인하는 법",
+      "category": "workflow",
+      "tags": [
+        "ovobject",
+        "debugging",
+        "grandcentral",
+        "objectviewer",
+        "render"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/workflow/ovobject-active-state-verification.md"
+    },
+    {
+      "id": "new-scan-mode-full-checklist",
+      "title": "새 스캔 모드 추가 시 7개 수정 지점 체크리스트",
+      "category": "workflow",
+      "tags": [
+        "scan-mode",
+        "acqassist",
+        "grandcentral",
+        "ovobject",
+        "dicom",
+        "iec62304"
+      ],
+      "difficulty": "advanced",
+      "path": "snippets/workflow/new-scan-mode-full-checklist.md"
+    },
+    {
+      "id": "probe-type-code-branching",
+      "title": "프로브 종류별 동작 분기: 코드 어디서 갈리는가",
+      "category": "domain",
+      "tags": [
+        "probe",
+        "preset",
+        "esMain",
+        "acqassist",
+        "branching",
+        "debugging"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/domain/probe-type-code-branching.md"
+    },
+    {
+      "id": "auditlog-obligation-guide",
+      "title": "AuditLog 의무 vs ScLog 선택: 판단 기준",
+      "category": "domain",
+      "tags": [
+        "auditlog",
+        "sclog",
+        "fda",
+        "iec62304",
+        "compliance",
+        "logging"
+      ],
+      "difficulty": "intermediate",
+      "path": "snippets/domain/auditlog-obligation-guide.md"
     }
   ],
-  "total": 124
+  "total": 136
 }
