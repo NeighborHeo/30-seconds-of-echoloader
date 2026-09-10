@@ -221,31 +221,6 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "acq-assist-phase-lifecycle",
-      "title": "Acquisition Assistant Phase 생명주기",
-      "category": "domain",
-      "file": "snippets/domain/acq-assist-phase-lifecycle.md",
-      "tags": [
-        "phase",
-        "lifecycle",
-        "scan-state"
-      ],
-      "difficulty": "advanced"
-    },
-    {
-      "id": "autopos-key-resolution",
-      "title": "AutoPos 키 해석",
-      "category": "domain",
-      "file": "snippets/domain/autopos-key-resolution.md",
-      "tags": [
-        "autopos",
-        "swe",
-        "ugap",
-        "key-handling"
-      ],
-      "difficulty": "advanced"
-    },
-    {
       "id": "roi-processor-concept",
       "title": "ROI Processor 개념",
       "category": "domain",
@@ -360,58 +335,6 @@
         "structure"
       ],
       "difficulty": "beginner"
-    },
-    {
-      "id": "composition-over-inheritance-liverwarning3panel",
-      "title": "Composition: LiverWarning3Panel 추출",
-      "category": "architecture",
-      "file": "snippets/architecture/composition-over-inheritance-liverwarning3panel.md",
-      "tags": [
-        "composition",
-        "inheritance",
-        "refactoring",
-        "liver-warning"
-      ],
-      "difficulty": "advanced"
-    },
-    {
-      "id": "pushdown-vs-hoisting-strategy",
-      "title": "Push-down vs Hoisting 전략",
-      "category": "architecture",
-      "file": "snippets/architecture/pushdown-vs-hoisting-strategy.md",
-      "tags": [
-        "refactoring",
-        "strategy",
-        "push-down",
-        "hoisting"
-      ],
-      "difficulty": "advanced"
-    },
-    {
-      "id": "swe-vs-ugap-cannot-merge",
-      "title": "SWE와 UGAP는 합칠 수 없다",
-      "category": "architecture",
-      "file": "snippets/architecture/swe-vs-ugap-cannot-merge.md",
-      "tags": [
-        "swe",
-        "ugap",
-        "divergence",
-        "design"
-      ],
-      "difficulty": "advanced"
-    },
-    {
-      "id": "acqassiststate-enum-duplication",
-      "title": "AcqAssistState enum 중복",
-      "category": "architecture",
-      "file": "snippets/architecture/acqassiststate-enum-duplication.md",
-      "tags": [
-        "enum",
-        "duplication",
-        "layers",
-        "sync"
-      ],
-      "difficulty": "advanced"
     },
     {
       "id": "external-contracts-dont-touch",
@@ -836,48 +759,6 @@
       "difficulty": "beginner"
     },
     {
-      "id": "frame-buffer-channels",
-      "title": "프레임 버퍼 채널: SWE vs UGAP",
-      "category": "domain",
-      "file": "snippets/domain/frame-buffer-channels.md",
-      "tags": [
-        "frame-buffer",
-        "swe",
-        "ugap",
-        "acquisition",
-        "domain-difference"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "swe-freeze-continuous-mode",
-      "title": "SWE: Freeze vs Continuous 모드",
-      "category": "domain",
-      "file": "snippets/domain/swe-freeze-continuous-mode.md",
-      "tags": [
-        "swe",
-        "freeze",
-        "continuous",
-        "autopos",
-        "state-machine"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "ugap-measure-mode",
-      "title": "UGAP: Measure 모드와 분석 키",
-      "category": "domain",
-      "file": "snippets/domain/ugap-measure-mode.md",
-      "tags": [
-        "ugap",
-        "measure-mode",
-        "autopos",
-        "analysis",
-        "attenuation"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
       "id": "watchdog-crash-handler",
       "title": "워치독 & 치명 오류 핸들러",
       "category": "domain",
@@ -906,20 +787,6 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "tilt-angle-validation",
-      "title": "기울기 각도 검증 (PoorProbe 기하)",
-      "category": "domain",
-      "file": "snippets/domain/tilt-angle-validation.md",
-      "tags": [
-        "ugap",
-        "poor-probe",
-        "tilt-angle",
-        "geometry",
-        "validation"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
       "id": "gc-parameter-bus",
       "title": "GC 파라미터 버스: Layer A↔B 브리지",
       "category": "architecture",
@@ -932,63 +799,6 @@
         "architecture"
       ],
       "difficulty": "intermediate"
-    },
-    {
-      "id": "p0b-unit-test-strategy",
-      "title": "P0b: Warning 단위 테스트 전략",
-      "category": "architecture",
-      "file": "snippets/architecture/p0b-unit-test-strategy.md",
-      "tags": [
-        "testing",
-        "gtest",
-        "warning",
-        "p0b",
-        "refactoring",
-        "safety"
-      ],
-      "difficulty": "advanced"
-    },
-    {
-      "id": "director-signoff-questions",
-      "title": "P2+P4 전 Director 확인 질문 5가지",
-      "category": "architecture",
-      "file": "snippets/architecture/director-signoff-questions.md",
-      "tags": [
-        "process",
-        "refactoring",
-        "governance",
-        "p2-p4",
-        "decision"
-      ],
-      "difficulty": "advanced"
-    },
-    {
-      "id": "analysis-design-docs",
-      "title": "analysis/ 디렉토리와 설계문서 §참조",
-      "category": "architecture",
-      "file": "snippets/architecture/analysis-design-docs.md",
-      "tags": [
-        "documentation",
-        "traceability",
-        "design-docs",
-        "phase-markers",
-        "governance"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "pushdown-preconditions",
-      "title": "푸시다운 사전 조건: 언제 안전하게 내려도 되나",
-      "category": "architecture",
-      "file": "snippets/architecture/pushdown-preconditions.md",
-      "tags": [
-        "push-down",
-        "refactoring",
-        "warning",
-        "dependency",
-        "strategy"
-      ],
-      "difficulty": "advanced"
     },
     {
       "id": "what-is-udt",
@@ -1193,19 +1003,6 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "d5-stub-handlers",
-      "title": "D5-stub 7개 핸들러: 즉시 가능한 푸시다운 작업",
-      "category": "architecture",
-      "file": "snippets/architecture/d5-stub-handlers.md",
-      "tags": [
-        "d5-stub",
-        "push-down",
-        "handlers",
-        "refactoring"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
       "id": "roi-coordinate-system",
       "title": "ROI 좌표계: 커서 → ROI 배치 → GC 파라미터",
       "category": "domain",
@@ -1247,20 +1044,6 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "preset-name-risk",
-      "title": "프리셋 문자열 하드코딩 위험: 'ShearTrackAlg' 문제",
-      "category": "domain",
-      "file": "snippets/domain/preset-name-risk.md",
-      "tags": [
-        "preset",
-        "hardcoding",
-        "ugap",
-        "risk",
-        "director-q2"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
       "id": "echo-config-internals",
       "title": "EchoConfig 내부: 프리셋 관리자의 책임 범위",
       "category": "packages",
@@ -1271,33 +1054,6 @@
         "xml",
         "validation",
         "audit"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "swe-ugap-preset-difference",
-      "title": "SWE vs UGAP 프리셋 차이: 왜 공유 불가능한가",
-      "category": "domain",
-      "file": "snippets/domain/swe-ugap-preset-difference.md",
-      "tags": [
-        "swe",
-        "ugap",
-        "preset",
-        "clinical",
-        "physics"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "scanstate-vs-acqassiststate",
-      "title": "ScanState vs AcqAssistState: 두 상태 머신의 계층",
-      "category": "domain",
-      "file": "snippets/domain/scanstate-vs-acqassiststate.md",
-      "tags": [
-        "scanstate",
-        "acqassiststate",
-        "state-machine",
-        "esmain"
       ],
       "difficulty": "intermediate"
     },
@@ -1340,6 +1096,623 @@
         "threading"
       ],
       "difficulty": "intermediate"
+    },
+    {
+      "id": "gipc-app-resource-map",
+      "title": "gipc-app 전체 리소스 구조도",
+      "category": "system",
+      "tags": [
+        "resource-map",
+        "packages",
+        "layers",
+        "overview",
+        "architecture"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/system/gipc-app-resource-map.md"
+    },
+    {
+      "id": "gc-object-lifecycle",
+      "title": "GrandCentral 객체 수명주기 다이어그램",
+      "category": "system",
+      "tags": [
+        "gc-framework",
+        "udt",
+        "lifecycle",
+        "ovobject",
+        "activation"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/system/gc-object-lifecycle.md"
+    },
+    {
+      "id": "echoloader-startup-sequence",
+      "title": "EchoLoader 시작 시퀀스 다이어그램",
+      "category": "system",
+      "tags": [
+        "startup",
+        "initialization",
+        "dll-load",
+        "echoloader",
+        "sequence"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/system/echoloader-startup-sequence.md"
+    },
+    {
+      "id": "observer-gc-param-bus",
+      "title": "Observer 패턴: GC 파라미터 버스",
+      "category": "patterns",
+      "tags": [
+        "observer",
+        "gc-parameter-bus",
+        "decoupling",
+        "layer-a",
+        "layer-b"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/patterns/observer-gc-param-bus.md"
+    },
+    {
+      "id": "nvi-pattern-in-acqassist",
+      "title": "NVI 패턴: AcquisitionAssistant 계층",
+      "category": "patterns",
+      "tags": [
+        "nvi",
+        "non-virtual-interface",
+        "template-method",
+        "base-class",
+        "safety"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/patterns/nvi-pattern-in-acqassist.md"
+    },
+    {
+      "id": "strategy-pattern-handler-type",
+      "title": "Strategy 패턴: HandlerType 선택",
+      "category": "patterns",
+      "tags": [
+        "strategy",
+        "handler-type",
+        "swe",
+        "ugap",
+        "interface"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/patterns/strategy-pattern-handler-type.md"
+    },
+    {
+      "id": "facade-pattern-manager",
+      "title": "Facade 패턴: Manager 클래스",
+      "category": "patterns",
+      "tags": [
+        "facade",
+        "singleton",
+        "manager",
+        "esmain",
+        "coupling"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/patterns/facade-pattern-manager.md"
+    },
+    {
+      "id": "crtp-static-polymorphism",
+      "title": "CRTP 정적 다형성",
+      "category": "patterns",
+      "tags": [
+        "crtp",
+        "template",
+        "static-polymorphism",
+        "render",
+        "cpp11"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/patterns/crtp-static-polymorphism.md"
+    },
+    {
+      "id": "raii-scoped-lock-patterns",
+      "title": "RAII: ScCommon::ScopedLock 패턴",
+      "category": "patterns",
+      "tags": [
+        "raii",
+        "scoped-lock",
+        "mutex",
+        "resource-management",
+        "safety"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/patterns/raii-scoped-lock-patterns.md"
+    },
+    {
+      "id": "pimpl-idiom",
+      "title": "PIMPL 이디엄: 컴파일 경계 축소",
+      "category": "cpp-patterns",
+      "tags": [
+        "pimpl",
+        "compile-time",
+        "encapsulation",
+        "unique-ptr",
+        "coupling"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp-patterns/pimpl-idiom.md"
+    },
+    {
+      "id": "type-erasure-variant",
+      "title": "타입 소거: Variant 구현",
+      "category": "cpp-patterns",
+      "tags": [
+        "type-erasure",
+        "variant",
+        "gc-parameter",
+        "tagged-union",
+        "cpp11"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/cpp-patterns/type-erasure-variant.md"
+    },
+    {
+      "id": "move-semantics-frame-buffer",
+      "title": "이동 시맨틱: 프레임 버퍼 소유권",
+      "category": "cpp-patterns",
+      "tags": [
+        "move-semantics",
+        "frame-buffer",
+        "performance",
+        "cpp11",
+        "ownership"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp-patterns/move-semantics-frame-buffer.md"
+    },
+    {
+      "id": "const-correctness-render",
+      "title": "Const 정확성: Render 파이프라인",
+      "category": "cpp-patterns",
+      "tags": [
+        "const",
+        "render",
+        "mutable",
+        "thread-safety",
+        "cpp11"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp-patterns/const-correctness-render.md"
+    },
+    {
+      "id": "ultrasound-image-pipeline",
+      "title": "초음파 이미지 파이프라인",
+      "category": "domain",
+      "tags": [
+        "ultrasound",
+        "beamforming",
+        "scan-conversion",
+        "pipeline",
+        "gpu"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/domain/ultrasound-image-pipeline.md"
+    },
+    {
+      "id": "iec-62304-sw-class",
+      "title": "IEC 62304 소프트웨어 안전 등급",
+      "category": "domain",
+      "tags": [
+        "iec-62304",
+        "safety",
+        "compliance",
+        "class-c",
+        "medical-device"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/domain/iec-62304-sw-class.md"
+    },
+    {
+      "id": "dicom-sr-measurement",
+      "title": "DICOM SR 측정값 구조",
+      "category": "domain",
+      "tags": [
+        "dicom",
+        "sr",
+        "measurement",
+        "echoworksheet",
+        "compliance"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/domain/dicom-sr-measurement.md"
+    },
+    {
+      "id": "watchdog-and-safety-monitor",
+      "title": "Watchdog 타이머와 안전 모니터",
+      "category": "domain",
+      "tags": [
+        "watchdog",
+        "safety",
+        "timer",
+        "fail-safe",
+        "medical-device"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/domain/watchdog-and-safety-monitor.md"
+    },
+    {
+      "id": "gc-parameter-dispatch",
+      "title": "GC 파라미터 버스 디스패치 내부",
+      "category": "udt",
+      "tags": [
+        "gc-parameter",
+        "dispatch",
+        "routing",
+        "ovobject",
+        "parameter-bus"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/udt/gc-parameter-dispatch.md"
+    },
+    {
+      "id": "udt-multi-object-coordination",
+      "title": "OVObject 간 간접 협력 패턴",
+      "category": "udt",
+      "tags": [
+        "udt",
+        "ovobject",
+        "coordination",
+        "gc-parameter",
+        "decoupling"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/udt/udt-multi-object-coordination.md"
+    },
+    {
+      "id": "ovobject-composition-pattern",
+      "title": "OVObject 합성 패턴",
+      "category": "udt",
+      "tags": [
+        "ovobject",
+        "composition",
+        "helper-class",
+        "udt",
+        "factory"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/udt/ovobject-composition-pattern.md"
+    },
+    {
+      "id": "gc-variant-type-dispatch",
+      "title": "GC Variant 타입 디스패치",
+      "category": "udt",
+      "tags": [
+        "variant",
+        "type-dispatch",
+        "gc-parameter",
+        "tagged-union",
+        "type-safety"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/udt/gc-variant-type-dispatch.md"
+    },
+    {
+      "id": "udt-registry-lookup",
+      "title": "UDT 레지스트리 조회 안전 체인",
+      "category": "udt",
+      "tags": [
+        "udt",
+        "registry",
+        "gc-udt-handle",
+        "isvalid",
+        "safety"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/udt/udt-registry-lookup.md"
+    },
+    {
+      "id": "frame-budget-16ms",
+      "title": "16ms 프레임 버짓 관리",
+      "category": "cpp-patterns",
+      "tags": [
+        "performance",
+        "frame-budget",
+        "render",
+        "timer",
+        "real-time"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp-patterns/frame-budget-16ms.md"
+    },
+    {
+      "id": "object-pool-frame-buffer",
+      "title": "오브젝트 풀: 프레임 버퍼 재사용",
+      "category": "cpp-patterns",
+      "tags": [
+        "object-pool",
+        "frame-buffer",
+        "performance",
+        "raii",
+        "memory"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp-patterns/object-pool-frame-buffer.md"
+    },
+    {
+      "id": "lock-free-status-flag",
+      "title": "Lock-free 상태 플래그: std::atomic",
+      "category": "cpp-patterns",
+      "tags": [
+        "atomic",
+        "lock-free",
+        "thread",
+        "render",
+        "performance"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/cpp-patterns/lock-free-status-flag.md"
+    },
+    {
+      "id": "string-key-cache-pattern",
+      "title": "GC 파라미터 키 문자열 캐싱",
+      "category": "cpp-patterns",
+      "tags": [
+        "string",
+        "cache",
+        "performance",
+        "gc-parameter",
+        "constexpr"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp-patterns/string-key-cache-pattern.md"
+    },
+    {
+      "id": "render-thread-isolation",
+      "title": "렌더 스레드 격리 패턴",
+      "category": "cpp-patterns",
+      "tags": [
+        "render-thread",
+        "async",
+        "double-buffer",
+        "atomic",
+        "performance"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/cpp-patterns/render-thread-isolation.md"
+    },
+    {
+      "id": "crash-dump-analysis",
+      "title": "Windows Minidump 분석 방법",
+      "category": "workflow",
+      "tags": [
+        "crash",
+        "windbg",
+        "minidump",
+        "debugging",
+        "pdb"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/workflow/crash-dump-analysis.md"
+    },
+    {
+      "id": "gc-param-debug-trace",
+      "title": "GC 파라미터 흐름 디버깅",
+      "category": "workflow",
+      "tags": [
+        "gc-parameter",
+        "debugging",
+        "trace",
+        "ovobject",
+        "layer-b"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/workflow/gc-param-debug-trace.md"
+    },
+    {
+      "id": "mock-interface-for-testing",
+      "title": "C++11 GoogleTest 수동 Mock 패턴",
+      "category": "workflow",
+      "tags": [
+        "mock",
+        "testing",
+        "googletest",
+        "interface",
+        "seam"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/workflow/mock-interface-for-testing.md"
+    },
+    {
+      "id": "common-build-errors",
+      "title": "gipc-app 빌드 에러 TOP 5",
+      "category": "workflow",
+      "tags": [
+        "build",
+        "msvc",
+        "error",
+        "cpp",
+        "linker"
+      ],
+      "difficulty": "beginner",
+      "file": "snippets/workflow/common-build-errors.md"
+    },
+    {
+      "id": "forward-declaration-rules",
+      "title": "전방 선언 규칙",
+      "category": "cpp",
+      "tags": [
+        "forward-declaration",
+        "compile-time",
+        "coupling",
+        "include",
+        "cpp11"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp/forward-declaration-rules.md"
+    },
+    {
+      "id": "constexpr-compile-time-constants",
+      "title": "constexpr 컴파일 타임 상수",
+      "category": "cpp",
+      "tags": [
+        "constexpr",
+        "compile-time",
+        "gc-parameter",
+        "constants",
+        "cpp11"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/cpp/constexpr-compile-time-constants.md"
+    },
+    {
+      "id": "gipc-app-threading-model",
+      "title": "gipc-app 스레드 모델",
+      "category": "system",
+      "tags": [
+        "threading",
+        "render-thread",
+        "acquisition-thread",
+        "race-condition",
+        "atomic"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/system/gipc-app-threading-model.md"
+    },
+    {
+      "id": "user-action-to-render-flow",
+      "title": "사용자 버튼 → 화면 렌더링까지 완전한 흐름",
+      "category": "system",
+      "tags": [
+        "flow",
+        "sequence",
+        "threading",
+        "gc-parameter",
+        "render"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/system/user-action-to-render-flow.md"
+    },
+    {
+      "id": "mental-model-broadcast-system",
+      "title": "방송국 비유로 이해하는 gipc-app 구조",
+      "category": "system",
+      "tags": [
+        "mental-model",
+        "analogy",
+        "overview",
+        "layer-a",
+        "layer-b"
+      ],
+      "difficulty": "beginner",
+      "file": "snippets/system/mental-model-broadcast-system.md"
+    },
+    {
+      "id": "why-gc-param-bus",
+      "title": "왜 GC 파라미터 버스인가: 설계 결정의 이유",
+      "category": "architecture",
+      "tags": [
+        "gc-parameter",
+        "design-decision",
+        "decoupling",
+        "layering",
+        "philosophy"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/architecture/why-gc-param-bus.md"
+    },
+    {
+      "id": "failure-modes-map",
+      "title": "gipc-app 실패 모드 지도",
+      "category": "architecture",
+      "tags": [
+        "failure",
+        "debugging",
+        "crash",
+        "race-condition",
+        "silent-drop"
+      ],
+      "difficulty": "advanced",
+      "file": "snippets/architecture/failure-modes-map.md"
+    },
+    {
+      "id": "legacy-modern-code-boundary",
+      "title": "26년 코드베이스 지도: 지뢰밭 vs 안전 지대",
+      "category": "architecture",
+      "tags": [
+        "legacy",
+        "refactoring",
+        "esmain",
+        "mfc",
+        "ovobject"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/architecture/legacy-modern-code-boundary.md"
+    },
+    {
+      "id": "where-does-new-code-go",
+      "title": "새 코드는 어디에 짜나: Layer A vs Layer B 결정 기준",
+      "category": "architecture",
+      "tags": [
+        "layer-a",
+        "layer-b",
+        "decision",
+        "placement",
+        "ovobject"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/architecture/where-does-new-code-go.md"
+    },
+    {
+      "id": "codebase-search-strategies",
+      "title": "40k 파일 코드베이스에서 원하는 코드 찾기",
+      "category": "workflow",
+      "tags": [
+        "grep",
+        "search",
+        "navigation",
+        "codebase",
+        "debugging"
+      ],
+      "difficulty": "beginner",
+      "file": "snippets/workflow/codebase-search-strategies.md"
+    },
+    {
+      "id": "esmain-navigation",
+      "title": "ESMain.cpp 10,000줄 탐색법",
+      "category": "workflow",
+      "tags": [
+        "esmain",
+        "navigation",
+        "grep",
+        "monolith",
+        "codebase"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/workflow/esmain-navigation.md"
+    },
+    {
+      "id": "gc-param-feature-development",
+      "title": "GC 파라미터 기반 기능 개발: 처음부터 끝까지",
+      "category": "workflow",
+      "tags": [
+        "gc-parameter",
+        "feature-development",
+        "atomic",
+        "setparameter",
+        "workflow"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/workflow/gc-param-feature-development.md"
+    },
+    {
+      "id": "pre-commit-safety-net",
+      "title": "커밋 전 안전성 체크: CI 없는 코드베이스 안전망",
+      "category": "workflow",
+      "tags": [
+        "pre-commit",
+        "safety",
+        "checklist",
+        "build",
+        "iec-62304"
+      ],
+      "difficulty": "intermediate",
+      "file": "snippets/workflow/pre-commit-safety-net.md"
     }
-  ]
+  ],
+  "total": 124
 }
