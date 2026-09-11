@@ -209,18 +209,6 @@
       "difficulty": "intermediate"
     },
     {
-      "id": "acq-assist-state-machine",
-      "title": "Acquisition Assistant 상태 머신",
-      "category": "domain",
-      "file": "snippets/domain/acq-assist-state-machine.md",
-      "tags": [
-        "state-machine",
-        "acq-assist",
-        "enum"
-      ],
-      "difficulty": "intermediate"
-    },
-    {
       "id": "roi-processor-concept",
       "title": "ROI Processor 개념",
       "category": "domain",
@@ -1714,21 +1702,6 @@
       "file": "snippets/workflow/pre-commit-safety-net.md"
     },
     {
-      "id": "swe-ugap-dual-gating",
-      "title": "SWE + UGAP 공통 기능의 이중 게이팅 패턴",
-      "category": "workflow",
-      "tags": [
-        "swe",
-        "ugap",
-        "gating",
-        "esmain",
-        "acquisition-assistant",
-        "elasto"
-      ],
-      "difficulty": "intermediate",
-      "path": "snippets/workflow/swe-ugap-dual-gating.md"
-    },
-    {
       "id": "enum-change-impact-grep",
       "title": "AcqAssistState에 새 enum 값 추가할 때 영향 범위 grep",
       "category": "workflow",
@@ -1901,5 +1874,5 @@
       "path": "snippets/domain/auditlog-obligation-guide.md"
     }
   ],
-  "total": 136
+  "total": 134
 }

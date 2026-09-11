@@ -16,11 +16,11 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [고급 C++ 패턴](snippets/cpp-patterns/) | 23 | PIMPL, 이동 시맨틱, 16ms 프레임 버짓, atomic, 오브젝트 풀 |
 | [디자인 패턴](snippets/patterns/) | 6 | Observer, NVI, Strategy, Facade, CRTP, RAII |
 | [아키텍처](snippets/architecture/) | 23 | 설계 철학, 실패 모드 지도, 26년 코드베이스 지형, 코드 배치 결정 |
-| [도메인 지식](snippets/domain/) | 17 | 초음파 물리, SWE, UGAP, IEC 62304, DICOM |
+| [도메인 지식](snippets/domain/) | 16 | 초음파 물리, SWE, UGAP, IEC 62304, DICOM |
 | [패키지 가이드](snippets/packages/) | 11 | Echo* 패키지별 역할, 의존 관계, 주의사항 |
-| [워크플로](snippets/workflow/) | 24 | 코드 탐색법, ESMain 탐색, GC 파라미터 개발, 커밋 전 안전망 |
+| [워크플로](snippets/workflow/) | 23 | 코드 탐색법, ESMain 탐색, GC 파라미터 개발, 커밋 전 안전망 |
 
-**총 136개 아티클**
+**총 134개 아티클**
 
 ---
 
@@ -150,7 +150,7 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 
 ---
 
-## 🏥 도메인 지식 (17)
+## 🏥 도메인 지식 (16)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -161,7 +161,6 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [DICOM SR 측정값 구조](snippets/domain/dicom-sr-measurement.md) | SR 트리, UCUM 코드, 규정 준수 |
 | [Watchdog & 안전 모니터](snippets/domain/watchdog-and-safety-monitor.md) | 렌더링 루프 Watchdog + fail-safe |
 | [간 경고 3종](snippets/domain/liver-warning-triad.md) | LargeSCD + PoorProbe + ObliqueCapsule |
-| [Acquisition Assistant 상태 머신](snippets/domain/acq-assist-state-machine.md) | AcqAssistState 5개 상태 |
 | [ROI Processor 개념](snippets/domain/roi-processor-concept.md) | SWEROIProcessor vs ACResults |
 | [프로브 접촉 품질 지시자](snippets/domain/probe-contact-quality-indicator.md) | ProbeContactQualityIndicator |
 | [LiverAI Processor](snippets/domain/liver-ai-processor.md) | AI 모델 파이프라인 |
@@ -192,7 +191,7 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 
 ---
 
-## ⚙️ 워크플로 (24)
+## ⚙️ 워크플로 (23)
 
 | 아티클 | 핵심 개념 |
 |--------|----------|
@@ -212,7 +211,6 @@ GE Healthcare 초음파 진단기기(Vivid 시리즈) 소프트웨어 `gipc-app`
 | [ESMain.cpp 10,000줄 탐색법](snippets/workflow/esmain-navigation.md) | 구역 지도 + 작업별 grep + VS 단축키 |
 | [GC 파라미터 기능 개발 전체 절차](snippets/workflow/gc-param-feature-development.md) | 키 설계→발행→수신→Render→디버깅 6단계 |
 | [커밋 전 안전성 체크](snippets/workflow/pre-commit-safety-net.md) | CI 없는 코드베이스의 10분 안전망 |
-| [SWE+UGAP 이중 게이팅 패턴](snippets/workflow/swe-ugap-dual-gating.md) | 두 모드 공통 기능 추가 시 올바른 게이팅 패턴 |
 | [enum 추가 시 영향 범위 grep](snippets/workflow/enum-change-impact-grep.md) | AcqAssistState 값 추가 → switch/if-else 누락 없이 찾기 |
 | [ESMain PR 리뷰 체크리스트](snippets/workflow/esmain-pr-review-checklist.md) | ESMain을 건드리는 PR 리뷰 7개 확인 항목 |
 | [Debug/Release 빌드 차이 버그 조사법](snippets/workflow/debug-vs-release-investigation.md) | UB·최적화·assert 부작용으로 인한 Debug/Release 불일치 |
